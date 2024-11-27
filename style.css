@@ -1,0 +1,70 @@
+:root{
+    --primary-bg: #ff6f61; 
+    --secondary-bg: #ffd93d; 
+    --accent-color: #00c1d4; 
+    --text-color: #2b2d42; 
+    --hover-color: #9c27b0;
+}
+
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color:white;
+}
+.movie-item{
+    
+    background-color: rgba(22, 33, 62, 0.8);
+    margin-bottom: 5px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.movie-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    gap: 20px;
+}
+.movie-header{
+    padding: 15px;
+    background-color: aqua;
+    cursor: pointer;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0,3s;
+}
+.movie-header:hover{
+    background-color: aquamarine;
+}
+.movie-title{
+    font-size: medium;
+    font-weight: bolder;
+}
+.movie-year{
+    color:red;
+}
+.movie-details{
+    display:none;
+    padding: 20px;
+}
+.movie-details.active {
+    display: grid;
+    gap: 20px;
+}
+
+.movie-poster {
+    width: 150px;
+    height: 225px;
+    object-fit: cover;
+}
+
+.movie-info {
+    flex: 1;
+}
+
+.cast-list {
+    color: #666;
+    margin-top: 10px;}
